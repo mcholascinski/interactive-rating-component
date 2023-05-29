@@ -19,18 +19,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Overpass', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
+    font: 400 15px/24px 'Overpass', sans-serif;
     color: var(--neutral-light-grey);
     background-color: var(--neutral-very-dark-blue);
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 35px;
+    font: 700 28px/35px 'Overpass', sans-serif;
     color: var(--neutral-white);
     margin: 0;
 }
@@ -38,8 +33,7 @@ h2 {
 h3 {
     color: var(--primary-orange);
     margin: 2rem;
-    font-size: 15px;
-    font-weight: 400;
+    font: 400 15px 'Overpass', sans-serif;
 }
 
 ul {
@@ -51,9 +45,7 @@ ul {
 }
 
 li {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font: 700 16px/24px 'Overpass', sans-serif;
     color: var(--neutral-medium-grey);
     border-radius: 50%;
     background-color: var(--neutral-dark-blue);
@@ -65,7 +57,7 @@ li {
     cursor: pointer;
 }
 
-li:hover{
+li:hover {
     color: var(--neutral-white);
     background-color: var(--neutral-light-grey);
 }
@@ -76,9 +68,8 @@ li.active {
 }
 
 button {
-    font-weight: 700;
+    font: 700 15px/19px 'Overpass', sans-serif;
     text-transform: uppercase;
-    line-height: 19px;
     color: var(--neutral-white);
     background-color: var(--primary-orange);
     text-align: center;
@@ -121,6 +112,45 @@ button:hover {
     padding: 3em 2rem;
     display: none;
 }
+
+@media (max-width: 375px) {
+    body {
+        font: 400 14px/24px 'Overpass', sans-serif;
+    }
+
+    h2 {
+        font: 700 24px/30px 'Overpass', sans-serif;
+    }
+
+    h3 {
+        font-size: 14px;
+        margin: 1.5rem;
+    }
+
+    ul {
+        margin: 1.5rem auto 1.5rem auto;
+    }
+
+    li {
+        font-size: 14px;
+        height: 42px;
+        width: 42px;
+    }
+
+    .container {
+        padding: 1.5rem;
+        height: 360px;
+    }
+
+    .star-icon {
+        margin-bottom: 1rem;
+    }
+    
+    .thank-you-state {
+        padding: 2rem 1.5rem;
+    }
+}
+
 
 @media (max-width: 375px) {
     body {
